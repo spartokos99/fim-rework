@@ -1,0 +1,78 @@
+:root, [data-bs-theme=light] {
+  --bs-primary: darkgoldenrod;
+  --bs-primary-rgb: 184,134,11;
+  --bs-primary-text-emphasis: #4A3604;
+  --bs-primary-bg-subtle: #F1E7CE;
+  --bs-primary-border-subtle: #E3CF9D;
+}
+
+.btn-primary {
+  --bs-btn-color: #000000;
+  --bs-btn-bg: darkgoldenrod;
+  --bs-btn-border-color: darkgoldenrod;
+  --bs-btn-hover-color: #000000;
+  --bs-btn-hover-bg: #C39830;
+  --bs-btn-hover-border-color: #BF9223;
+  --bs-btn-focus-shadow-rgb: 28,20,2;
+  --bs-btn-active-color: #000000;
+  --bs-btn-active-bg: #C69E3C;
+  --bs-btn-active-border-color: #BF9223;
+  --bs-btn-disabled-color: #000000;
+  --bs-btn-disabled-bg: darkgoldenrod;
+  --bs-btn-disabled-border-color: darkgoldenrod;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: darkgoldenrod;
+  --bs-btn-border-color: darkgoldenrod;
+  --bs-btn-focus-shadow-rgb: 184,134,11;
+  --bs-btn-hover-color: #000000;
+  --bs-btn-hover-bg: darkgoldenrod;
+  --bs-btn-hover-border-color: darkgoldenrod;
+  --bs-btn-active-color: #000000;
+  --bs-btn-active-bg: darkgoldenrod;
+  --bs-btn-active-border-color: darkgoldenrod;
+  --bs-btn-disabled-color: darkgoldenrod;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: darkgoldenrod;
+}
+
+[data-bs-theme=dark] {
+  --bs-primary: darkgoldenrod;
+  --bs-primary-rgb: 184,134,11;
+  --bs-primary-text-emphasis: #D4B66D;
+  --bs-primary-bg-subtle: #251B02;
+  --bs-primary-border-subtle: #6E5007;
+}
+
+[data-bs-theme=dark] .btn-primary, .btn-primary[data-bs-theme=dark] {
+  --bs-btn-color: #000000;
+  --bs-btn-bg: darkgoldenrod;
+  --bs-btn-border-color: darkgoldenrod;
+  --bs-btn-hover-color: #000000;
+  --bs-btn-hover-bg: #C39830;
+  --bs-btn-hover-border-color: #BF9223;
+  --bs-btn-focus-shadow-rgb: 28,20,2;
+  --bs-btn-active-color: #000000;
+  --bs-btn-active-bg: #C69E3C;
+  --bs-btn-active-border-color: #BF9223;
+  --bs-btn-disabled-color: #000000;
+  --bs-btn-disabled-bg: darkgoldenrod;
+  --bs-btn-disabled-border-color: darkgoldenrod;
+}
+
+[data-bs-theme=dark] .btn-outline-primary, .btn-outline-primary[data-bs-theme=dark] {
+  --bs-btn-color: darkgoldenrod;
+  --bs-btn-border-color: darkgoldenrod;
+  --bs-btn-focus-shadow-rgb: 184,134,11;
+  --bs-btn-hover-color: #000000;
+  --bs-btn-hover-bg: darkgoldenrod;
+  --bs-btn-hover-border-color: darkgoldenrod;
+  --bs-btn-active-color: #000000;
+  --bs-btn-active-bg: darkgoldenrod;
+  --bs-btn-active-border-color: darkgoldenrod;
+  --bs-btn-disabled-color: darkgoldenrod;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: darkgoldenrod;
+}
+
