@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Collection;
 use Str;
 
 #[Fillable(['team_id', 'title', 'slug', 'description', 'variants', 'image', 'category_id', 'tags', 'publish_at', 'hide_at', 'creator_id'])]
@@ -27,10 +28,10 @@ class Asset extends Model
     }
 
     protected $casts = [
-        'variants' => 'array',
         'publish_at' => 'datetime',
         'hide_at' => 'datetime',
         'tags' => 'array',
+        'variants' => 'array',
     ];
 
     public function team(): BelongsTo

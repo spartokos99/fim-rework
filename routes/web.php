@@ -13,24 +13,21 @@ Route::get('{slug}', function ($slug) {
         ->doesntHave('parent')
         ->get();
 
-    $secondLayerCategories = TeamCategory::query()
-        ->whereHas('assets', fn($q) => $q->where('team_id', $team->id))
-        ->whereHas('parent', fn($q) => $q->whereNull('parent_id'))
-        ->get();
+    $secondLayerCategories = TeamCategory::whereHas('parent', function ($query) {
+        $query->doesntHave('parent');
+    })->get();
 
-    $thirdLayerCategories = TeamCategory::query()
-        ->whereHas('assets', fn($q) => $q->where('team_id', $team->id))
-        ->whereHas('parent.parent')
-        ->doesntHave('children')
-        ->get();
+    $thirdLayerCategories = TeamCategory::whereHas('parent', function ($query) {
+        $query->has('parent');
+    })->get();
 
-
-    return view('FrontendPage', [
+    $return = [
         'team' => $team,
         'assets' => $assets,
 
         'flCats' => $firstLayerCategories,
         'slCats' => $secondLayerCategories,
         'tlCats' => $thirdLayerCategories,
-    ]);
+    ];
+    return view('FrontendPage', $return);
 });

@@ -85,7 +85,7 @@ class DatabaseSeeder extends Seeder
             'image' => 'assets/images/01KNQ53YWJ89ZAYYM0WQ74QQWZ.jpg',
             'publish_at' => now()->addDays(2),
             'hide_at' => null,
-            'variants' => '[{"name":"Bag","quantity":10,"prices":[{"amount":1,"currency":"EUR","price":55},{"amount":10,"currency":"EUR","price":480}],"show_warning":true,"warning_level":5}]',
+            'variants' => [["name"=>"Bag","quantity"=>10,"prices"=>[["amount"=>1,"currency"=>"EUR","price"=>55],["amount"=>10,"currency"=>"EUR","price"=>480]],"show_warning"=>true,"warning_level"=>5]],
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -99,7 +99,7 @@ class DatabaseSeeder extends Seeder
             'image' => 'assets/images/01KNQ53YWJ89ZAYYM0WQ74QQWZ.jpg',
             'publish_at' => now()->addDays(2),
             'hide_at' => null,
-            'variants' => '[{"name":"Bag","quantity":10,"prices":[{"amount":1,"currency":"EUR","price":55},{"amount":10,"currency":"EUR","price":480}],"show_warning":true,"warning_level":5}]',
+            'variants' => [["name"=>"Bag","quantity"=>10,"prices"=>[["amount"=>1,"currency"=>"EUR","price"=>55],["amount"=>10,"currency"=>"EUR","price"=>480]],"show_warning"=>true,"warning_level"=>5]],
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -113,7 +113,7 @@ class DatabaseSeeder extends Seeder
             'image' => 'assets/images/01KNQ53YWJ89ZAYYM0WQ74QQWZ.jpg',
             'publish_at' => now()->addDays(2),
             'hide_at' => null,
-            'variants' => '[{"name":"Bag","quantity":10,"prices":[{"amount":1,"currency":"EUR","price":55},{"amount":10,"currency":"EUR","price":480}],"show_warning":true,"warning_level":5}]',
+            'variants' => [["name"=>"Bag","quantity"=>10,"prices"=>[["amount"=>1,"currency"=>"EUR","price"=>55],["amount"=>10,"currency"=>"EUR","price"=>480]],"show_warning"=>true,"warning_level"=>5]],
             'created_at' => now(),
             'updated_at' => now(),
         ]);
